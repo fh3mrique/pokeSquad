@@ -2,8 +2,11 @@ import React from "react";
 import "./card.css";
 
 const Card = ({trainers}) => {
+ if (trainers.length === 0) {
+        return <p>Nenhum treinador encontrado</p>;
+  }
 
-    const treinador = trainers[0]
+  const treinador = trainers[0]
 
   return (
     <div className="cardContainer">
@@ -19,18 +22,18 @@ const Card = ({trainers}) => {
         <h2>Dados básicos</h2>
         <div className="wrapper">
           <div className="data-gender">
-            <p className="left-side">{trainers.name}</p>
-            <p className="right-side">Agatha</p>
+            <p className="left-side">Nome</p>
+            <p className="right-side">{treinador.name}</p>
           </div>
 
           <div className="data-gender">
             <p className="left-side">Sexo</p>
-            <p className="right-side">Feminino</p>
+            <p className="right-side">{treinador.genero}</p>
           </div>
 
           <div className="data-gender">
             <p className="left-side">Idade</p>
-            <p className="right-side">60</p>
+            <p className="right-side">{treinador.age} Anos</p>
           </div>
         </div>
       </div>
