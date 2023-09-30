@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cardContainer{
+    
+    max-width: 1000px;
+}
+
+.card{
+    background-color: aquamarine;
+    width: 40rem; 
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header h1{
+    width: 100%;
+    background-color:antiquewhite;
+    font-family: 'Bebas Neue', sans-serif;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+h2{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card img {
+    width: 80%;
+    border: solid 2px black;
+}
+
+.card h2{
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 900;
+    color: black;
+    font-size: 2.2em;
+}
+
+.data-gender{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2em;
+    font-family: 'Sofia Sans', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    column-gap: 2px;
+    margin-bottom: 10px;
+}
+
+.data-gender p{
+    background-color: aliceblue;
+}
+
+.data-gender .right-side{
+    width: 70%;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0px, 0px, 20px;
+    background-color: antiquewhite;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.name{
+    width: 70%;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0px, 0px, 20px;
+    background-color: antiquewhite;
+    border-radius: 0px 20px 20px 0px;
+
+}
+
+.data-gender .left-side{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0px 0px 20px;
+}
+
+

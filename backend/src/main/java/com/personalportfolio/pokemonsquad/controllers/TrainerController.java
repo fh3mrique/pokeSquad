@@ -9,22 +9,21 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.personalportfolio.pokemonsquad.entities.Pokemon;
-import com.personalportfolio.pokemonsquad.services.PokemonService;
+import com.personalportfolio.pokemonsquad.entities.Trainer;
+import com.personalportfolio.pokemonsquad.services.TrainerService;
 
 @RestController
-@RequestMapping("/pokemons")
+@RequestMapping("/trainers")
 @CrossOrigin("*")
-public class PokemonController {
+public class TrainerController {
 	
 	@Autowired
-	private PokemonService pokemonService;
+	private TrainerService trainerService;
 	
 	@GetMapping("list")
-	public ResponseEntity<List<Pokemon>> findAllPokemons (){
-		List<Pokemon> pokemons = pokemonService.findAll(); 
+	public ResponseEntity<List<Trainer>> findAlltrainers() {
+		List<Trainer> trainers = trainerService.findAll();
 		
-		return ResponseEntity.ok().body(pokemons);
+		return ResponseEntity.ok().body(trainers);
 	}
-
 }
